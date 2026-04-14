@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPON Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPON Signal Calculator</h1>
+
+        <label for="length">Cable Length (km):</label>
+        <input type="number" id="length" placeholder="e.g. 5">
+
+        <label for="splitter">Splitter Type:</label>
+        <select id="splitter">
+            <option value="3.5">1:8</option>
+            <option value="7.2">1:16</option>
+            <option value="10.5">1:32</option>
+        </select>
+
+        <label for="splices">Number of Splices:</label>
+        <input type="number" id="splices" placeholder="e.g. 4">
+
+        <button onclick="calculate()">Calculate Signal</button>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
